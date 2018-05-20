@@ -1,0 +1,134 @@
+<html>
+<head>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+   
+    <!-- Custom js/Python-->
+    <script src="Site.js"></script>  
+    <script src="Music.py"></script>  
+    
+    <!-- Custom SCSS -->
+    <link href="Music.css" rel="stylesheet">
+
+    <!-- Google Font API's-->
+    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Vast Shadow' rel='stylesheet'>
+
+            <!-- Google Sign-in API -->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="687378373155-7katgq3b5hitee5g215bn03air5rv9f4.apps.googleusercontent.com.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <title>S u n L u x u r y Music and Apparel</title>
+
+<script type="text/javascript">
+        $(window).on('scroll', function() {
+            if($(window).scrollTop()) {
+              $('nav').addClass('black');
+            }
+            else {
+              $('nav').removeClass('black');           
+            }
+    })
+    </script>
+</head>
+
+
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<body>
+<div class="wrapper">
+    <nav>
+               
+      <div class="logo"><a href="index.html" itemprop="url">S u n - L u x u r y</a></div>
+        <ul>
+            <li><a href="Media.html">Media</a></li>
+            <li><a href="https://sunluxury.bigcartel.com/">Apparel</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="ContactPage.html">Contact</a></li>
+            <li><a class="active" href="https://sunluxury.bigcartel.com/">Shop</a></li>
+        </ul>
+    </nav>
+    <section class="backImage"></section>
+</div>
+</body>
+
+
+
+<div class="vidDesript1"></div>
+<!-- Youtube viedo embed-->
+<div class="vidBox1">
+        <object data="https://www.youtube.com/embed/mFhxxEazS0s" 
+        width= "1000" height="540.8"></object>
+</div>
+
+<div class="vidDescrpit2"></div>
+<!-- Youtube viedo embed-->
+<div class="vidBox2">
+        <object data="https://www.youtube.com/embed/sFYQpHTsbMk"
+        width= "1000" height="540.8"></object>
+</div>
+
+
+<div class="vidDescript3"></div>
+<!-- Youtube viedo embed-->
+<div class="vidBox3">
+        <object data="https://www.youtube.com/embed/1RSQaVG7_QI"
+        width= "1000" height="540.8"></object>
+</div>
+
+
+
+<!-- Soundcloud api -->
+<iframe width="100%" height="166" scrolling="no" frameborder="no"
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/293&amp;{ ADD YOUR PARAMETERS HERE }">
+</iframe>
+
+
+<script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
+<script>
+SC.initialize({
+  client_id: 'YOUR_CLIENT_ID'
+});
+
+// stream track id 293 
+
+SC.stream('/tracks/293').then(function(player){
+  player.play().then(function(){
+    console.log('Playback started!');
+  }).catch(function(e){
+    console.error('Playback rejected. Try calling play() from a user interaction.', e);
+  });
+});
+</script>
+
+
+<!-- Spotify api
+<iframe src="https://open.spotify.com/embed?uri=spotify:track:5JunxkcjfCYcY7xJ29tLai"
+        frameborder="0" allow="encrypted-media" allowtransparency="true"></iframe>
+
+<iframe src="https://open.spotify.com/embed?uri=spotify:user:erebore:playlist:788MOXyTfcUb1tdw4oC7KJ&view=coverart"
+        frameborder="0" allow="encrypted-media" allowtransparency="true"></iframe>
+
+<iframe src="https://open.spotify.com/embed?uri=spotify:user:erebore:playlist:788MOXyTfcUb1tdw4oC7KJ&theme=white"
+        frameborder="0" allow="encrypted-media" allowtransparency="true"></iframe>
+
+<iframe src="https://open.spotify.com/embed?uri=spotify:user:erebore:playlist:788MOXyTfcUb1tdw4oC7KJ&theme=white&view=coverart"
+        frameborder="0" allow="encrypted-media" allowtransparency="true"></iframe>
+-->
+
+
+
+<div class="bottom-bar">
+                <br><br>
+                
+                <center>
+                <a href="Mailto:Sunluxuryco@gmail.com"><img src="Mailbtn1.png" alt="SunLuxury" height="40px"></a>
+                <a href="https://www.instagram.com/sunluxuryco/"><img src="Insta1.png" alt="SunLuxury" height="40px"></a>
+                <a href="https://twitter.com/SunLuxuryCo"><img src="Twit1.png" alt="SunLuxury" height="40px"></a>
+                </center>
+                
+                
+            Ⓒ S u n L u x r u y 2018
