@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Libre+Baskerville:400,700" type="text/css" title="Google Fonts">
     <link rel="apple-touch-icon" href="https://assets.bigcartel.com/account_images/1587721/SunSet1.png?auto=format&amp;fit=max&amp;h=180&amp;w=180">
     <!-- end of generated link tags -->
+
     
             <script type="text/javascript" async="" src="/stats.min.js"></script><script type="text/javascript">
               var _bcaq = _bcaq || [];
@@ -79,51 +80,22 @@
                 </a>
               </div>
         </header>
-        <div class="wrap">
-          <section class="content">
-                <div class="newsbox">
-                
-                        <input type="radio" name="images" id='i1' checked>
-                        <input type="radio" name="images" id='i2'>
-                        <input type="radio" name="images" id='i3'>
-                        
-                        
-                                <div class="boxImage" id='one'>
-                                    <img src="SunSet1.png">
-                                    <label for="i1" class="pre"></label> 
-                                    <label for="i2" class="nxt"></label>     
-                                    <div class="wordPic1"></div>         
-                                    <div class="underText1"></div>                    
-                                </div>
-                                
-                        
-                        
-                                <div class="boxImage" id='two'>
-                                    <img src="WhiteTShirt.jpg">
-                                    <label for="i1" class="pre"></label>
-                                    <label for="i3" class="nxt"></label>
-                                    <div class="wordPic2"></div>
-                                    <div class="underText2"></div>
-                                </div>
-                            
-                    
-                    
-                                    
-                                
-                                <div class="boxImage" id='three'>
-                                    <img src="Prototype.jpg">
-                                    <label for="i2" class="pre"></label>
-                                    <label for="i3" class="nxt"></label>
-                                    <div class="wordPic3"></div>
-                                    <div class="underText3"></div> 
-                                </div>
-    
-                                <div class="dotnav">
-                                        <label class="dots" id='dot1' for'i1'></label>
-                                        <label class="dots" id='dot2' for'i2'></label>
-                                        <label class="dots" id='dot3' for'i3'></label>
-                                    </div>
-                                    
+        <body>
+
+          <ul class="rslides">
+      <li><img src="rsz_sunset1.jpg" alt=""></li>
+      <li><img src="rsz_whitetshirt.jpg" alt=""></li>
+      <li><img src="rsz_1prototype.jpg" alt=""></li>
+          </ul>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="responsiveslides.min.js"></script>
+          <script>
+              $(function() {
+                $(".rslides").responsiveSlides();
+              });
+            </script>
+      </body>
     
           </section>
           <aside>
@@ -177,15 +149,9 @@
         <script src="//cache1.bigcartel.com/theme_assets/100/1.2.1/theme.js"></script>
         <script src="//cache0.bigcartel.com/api/4/api.usd.js"></script>
         
-        <script>
-          $(function() {
-            if ($('.flexslider').length) {
-              $('.flexslider').flexslider({
-                animation: "slide",
-                customDirectionNav: $(".flex-nav a")
-              });
-            }
-          });
-        </script>
-      
-    </body></html>
+        
+
+
+
+
+
